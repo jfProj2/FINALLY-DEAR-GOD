@@ -1,0 +1,131 @@
+########################
+CITATIONS FOR PROJECT 2
+
+
+810638856 (Ryan)
+
+810609119 (Emma)
+########################
+
+main.cpp
+-----------------------
+
+For this file there were no sources to cite. All code
+and ideas were the product of my partner and myself.
+
+**********************
+methods1.h
+-----------------------
+
+This header file contained most of the behind-the-scenes
+IO and error management.
+
+The file_exists() method was aided by the folllowing website.
+
+> https://techoverflow.net/2013/08/21/how-to-check-if-file-exists-using-stat/
+------
+The save_file() method had low-level IO flags that were found by
+researching into the "man 2 open" document. Here is where we
+learned about the different flags.
+
+> http://man7.org/linux/man-pages/man2/open.2.html
+-------
+
+The load_file() method was already made by previous
+work with Lab08's 'cat' function.
+-------
+
+The close_file() method was again borrowed from
+our Lab08 implementation.
+-------
+
+The get_filename() method was of our design.
+-------
+
+*********************
+methods2.h
+---------------------
+
+This header file contained all of methods that dealt with the runnning
+and handling of the TUI during its operation.
+
+The run_editor() function was the powerhouse for handling input
+and generating the TUI from the ncurses library.
+
+    For basic window setup.
+> http://hughm.cs.ukzn.ac.za/~murrellh/os/notes/ncurses.html#window
+
+  For color handling.
+> http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/color.html
+
+  For other ncurses commands used.
+> http://www.tldp.org/HOWTO/html_single/NCURSES-Programming-HOWTO/#INIT
+
+-------
+
+The data_to_screen() method simply took in data in the form
+of a string and printed it to the edit window. This
+method's implementation was borrowed from Lab08.
+-------
+
+The add_char() function is what handled the user input.
+This was a product of ingenuity.
+-------
+
+The remove_char() was also a product of ingenuity.
+-------
+
+The print_line_nums() method was also self-made.
+-------
+
+****************************
+methods3.h
+---------------------------
+
+This header file dealt with the various pop-up windows that dealt
+with file IO, errors, and functionality.
+
+The "#define ARRAY_SIZE(a) (sizeof(a) / sizeof(a[0]))" was
+borrowed from here
+
+> https://github.com/tony/NCURSES-Programming-HOWTO-examples/blob/
+  master/17-menus/user-pointer.c
+--------
+
+The show_menu_window() method was designed to display a file menu
+and show different options to choose from. Most of this code was
+aquired and built off of from here also.
+
+> https://github.com/tony/NCURSES-Programming-HOWTO-examples/blob/
+  master/17-menus/user-pointer.c
+---------
+
+The show_error_window() method was essentially the same thing
+as the show_menu_window() method but with different selections.
+---------
+
+The show_open_window() method used the same methods as the previous
+two functions but also implemented a FORM object. The code for the
+FORM was got from here.
+
+> http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/forms.html
+---------
+
+The show_save_window() method used the same implementation as
+the first two window methods.
+---------
+
+The show_saveas_window() method was a combination of the
+show_save_window() and the show_open_window() function
+capabilities.
+----------
+
+****************************
+methods_main.h
+----------------------------
+
+This header file was just a place to put our
+function prototypes for the project.
+----------------------------
+
+END
